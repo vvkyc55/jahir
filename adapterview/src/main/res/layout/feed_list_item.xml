@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/feed_list_item_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/feed_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/feed_list_item_categories"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Title"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feed_list_item_content_snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/feed_list_item_title"
+        android:layout_below="@id/feed_list_item_title"
+        android:layout_marginTop="8dp"
+        android:lines="3"
+        android:text="Content Snippet"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/feed_list_item_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/feed_list_item_content_snippet"
+        android:layout_alignStart="@id/feed_list_item_content_snippet"
+        android:layout_below="@id/feed_list_item_content_snippet"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:text="Author"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/feed_list_item_published_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/feed_list_item_author"
+        android:layout_marginRight="8dp"
+        android:maxLines="1"
+        android:text="Fri, 09 Mar 2012 15:25:00 -0800"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+</RelativeLayout>
